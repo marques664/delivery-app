@@ -1,0 +1,32 @@
+# ===== GENERAL =====
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# ===== IDE =====
+.idea/
+.vscode/
+*.iml
+
+# ===== BACKEND (SPRING/GRADLE) =====
+.gradle/
+build/
+
+# ===== FLUTTER =====
+.dart_tool/
+.packages
+.pub/
+
+# Android
+android/.gradle/
+android/app/build/
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+
+# ===== SECRETS =====
+.env
+application.properties
+application.yml
