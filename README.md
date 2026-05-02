@@ -1,5 +1,11 @@
 # Sistema de Delivery Fullstack
 
+## 📌 Status
+
+🚧 Em desenvolvimento — evolução contínua com commits documentando cada etapa do processo.
+
+---
+
 Projeto fullstack desenvolvido com foco em aprendizado e demonstração de habilidades em desenvolvimento mobile e backend.
 
 A aplicação simula um sistema de delivery similar ao iFood, permitindo que usuários visualizem restaurantes, façam pedidos e acompanhem o status em tempo real.
@@ -19,11 +25,5 @@ A aplicação simula um sistema de delivery similar ao iFood, permitindo que usu
 * Trabalhar com persistência de dados
 * Implementar lógica de negócio real (pedidos, status, usuários)
 * Evoluir o projeto com funcionalidades como tempo real, autenticação e geolocalização
-
-## 📌 Status
-
-🚧 Em desenvolvimento — evolução contínua com commits documentando cada etapa do processo.
-
----
 
 Este projeto faz parte do meu processo de aprendizado em engenharia de software e desenvolvimento mobile.
