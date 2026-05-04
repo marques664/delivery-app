@@ -1,6 +1,6 @@
 package com.example.delivery.controller;
 
-import com.example.delivery.ProdutoService;
+import com.example.delivery.services.ProdutoService;
 import com.example.delivery.model.Produto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
