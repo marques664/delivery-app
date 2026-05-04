@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/restaurantes")
-public class testController {
+public class RestaurantController {
 
     @Autowired
     private RestauranteRepository repo;
