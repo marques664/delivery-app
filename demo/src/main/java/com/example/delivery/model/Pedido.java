@@ -15,6 +15,8 @@ public class Pedido {
 
     private String status;
 
+    private Double total;
+
     @ManyToOne
     private Restaurante restaurante;
 

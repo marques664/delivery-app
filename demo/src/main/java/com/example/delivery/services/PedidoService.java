@@ -19,10 +19,18 @@ public class PedidoService {
         //  define status inicial
         pedido.setStatus("CRIADO");
 
+        double total = 0;
         //  liga cada item ao pedido
         for (ItemPedido item : pedido.getItens()) {
             item.setPedido(pedido);
+
+            double preco = item.getProduto().getPreco();
+            int quantidade = item.getQuantidade();
+
+            total += preco * quantidade;
         }
+
+        pedido.setTotal(total);
 
         return pedidoRepository.save(pedido);
     }
