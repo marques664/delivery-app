@@ -4,6 +4,9 @@
 
 🚧 Em desenvolvimento — evolução contínua com commits documentando cada etapa do processo.
 
+Backend OK!
+Front in progress...
+
 ---
 
 Projeto fullstack desenvolvido com foco em aprendizado e demonstração de habilidades em desenvolvimento mobile e backend.
