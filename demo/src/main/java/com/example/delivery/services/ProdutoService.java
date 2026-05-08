@@ -24,4 +24,5 @@ public class ProdutoService {
     public List<Produto> listarPorRestaurante(Long restauranteId) {
         return repo.findByRestauranteId(restauranteId);
     }
+
 }

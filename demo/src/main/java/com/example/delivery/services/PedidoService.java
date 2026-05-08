@@ -60,8 +60,11 @@ public class PedidoService {
 
         pedido.setStatus(status);
 
+
         return pedidoRepository.save(pedido);
     }
+
+
 }
 
 

@@ -2,6 +2,7 @@ package com.example.delivery.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 import java.util.List;
@@ -18,6 +19,9 @@ public class Restaurante {
     @JsonIgnore
     private List<Produto> produtos;
 
+    @NotBlank(message = "Nome é obrigatório.")
     private String nome;
+
+    @NotBlank(message = "Endereço é obrigatório.")
     private String endereco;
 }

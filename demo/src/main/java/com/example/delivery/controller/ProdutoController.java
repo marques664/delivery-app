@@ -4,6 +4,7 @@ import com.example.delivery.services.ProdutoService;
 import com.example.delivery.model.Produto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
@@ -16,7 +17,7 @@ public class ProdutoController {
     private ProdutoService service;
 
     @PostMapping
-    public Produto criar(@RequestBody Produto p) {
+    public Produto criar(@Valid @RequestBody Produto p) {
         return service.salvar(p);
     }
 
