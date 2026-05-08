@@ -1,6 +1,7 @@
 package com.example.delivery.controller;
 
 import com.example.delivery.model.Pedido;
+import com.example.delivery.model.StatusPedido;
 import com.example.delivery.services.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,6 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/pedidos")
 public class PedidoController {
+
 
     @Autowired
     private PedidoService service;
@@ -30,5 +32,13 @@ public class PedidoController {
     @GetMapping("/{id}")
     public Pedido buscar(@PathVariable Long id) {
         return service.buscarPorId(id);
+    }
+
+    @PutMapping("/{id}/status")
+    public Pedido atualizarStatus(
+            @PathVariable Long id,
+            @RequestParam StatusPedido status
+    ) {
+        return service.atualizarStatus(id, status);
     }
 }
