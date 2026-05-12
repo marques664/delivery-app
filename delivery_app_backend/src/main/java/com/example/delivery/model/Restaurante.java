@@ -1,10 +1,11 @@
 package com.example.delivery.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 @Entity
@@ -14,6 +15,13 @@ public class Restaurante {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @OneToMany(mappedBy = "restaurante")
+    @JsonIgnore
+    private List<Produto> produtos;
+
+    @NotBlank(message = "Nome é obrigatório.")
     private String nome;
+
+    @NotBlank(message = "Endereço é obrigatório.")
     private String endereco;
 }
