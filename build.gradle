@@ -1,0 +1,4 @@
+// Arquivo raiz — apenas agrupa os módulos
+tasks.register('bootRunBackend') {
+    dependsOn gradle.includedBuild('delivery_app_backend').task(':bootRun')
+}

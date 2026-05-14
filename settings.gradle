@@ -1,0 +1,3 @@
+rootProject.name = 'delivery-app'
+
+includeBuild('delivery_app_backend')

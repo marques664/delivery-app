@@ -1,7 +1,18 @@
 /// Constantes da API
 class ApiConstants {
   /// URL base do backend
-  /// Change to your backend URL
+  /// 
+  /// Configure conforme seu ambiente:
+  /// 
+  /// DESENVOLVIMENTO LOCAL:
+  /// static const String baseUrl = 'http://localhost:8080';
+  /// 
+  /// DISPOSITIVO NA MESMA REDE:
+  /// Encontre o IP do seu computador (ipconfig no CMD) e use:
+  /// static const String baseUrl = 'http://192.168.x.x:8080';
+  /// 
+  /// PRODUÇÃO:
+  /// static const String baseUrl = 'https://seu-dominio.com';
   static const String baseUrl = 'http://localhost:8080';
 
   /// Endpoints da API

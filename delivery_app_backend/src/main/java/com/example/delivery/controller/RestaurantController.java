@@ -20,6 +20,13 @@ public class RestaurantController {
         return repo.findAll();
     }
 
+    // GET → buscar restaurante por ID
+    @GetMapping("/{id}")
+    public Restaurante buscarPorId(@PathVariable Long id) {
+        return repo.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Restaurante não encontrado com ID: " + id));
+    }
+
     // POST → criar restaurante
     @PostMapping
     public Restaurante criar(@RequestBody Restaurante r) {
